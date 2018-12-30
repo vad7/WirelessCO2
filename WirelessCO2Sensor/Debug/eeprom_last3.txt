@@ -1,0 +1,33 @@
+eeprom 0x0000  52 fe 01 A0 05 01 05 02 01 ff ff ff ff ff ff ff  Rþ.€.....ÿÿÿÿÿÿÿ
+eeprom 0x0010  1f 22 25 32 38 44 ff ff ff ff ff ff ff ff ff ff  ."%28Dÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x0020  c0 c2 c3 c4 c5 c6 c7 c8 c9 ff ff ff ff ff ff ff  ÁÂÃÄÅÆÇÈÉÿÿÿÿÿÿÿ
+eeprom 0x0030  17 d8 7d f8 52 d8 d5 d4 60 ff ff ff ff ff ff ff  .Ø}øRØÕÔ`ÿÿÿÿÿÿÿ
+eeprom 0x0040  00 ff 01 03 03 02 78 00 ff ff ff ff ff ff ff ff  .ÿ....x.ÿÿÿÿÿÿÿÿ
+eeprom 0x0050  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x0060  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x0070  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x0080  00 fe 01 00 00 00 00 00 00 00 00 00 00 00 00 00  .þ..............
+eeprom 0x0090  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x00A0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+
+set -> 0x0001  a0
+
+
+#define EPROM_OSCCAL				0x00
+#define EPROM_LowLightThreshold		0x01 // 0x98, Light ON threshold
+#define EPROM_NumberFans			0x02 // 4
+#define EPROM_TransmitPeriod		0x03 // 80, *0.125 sec
+#define EPROM_LowLightMaxFanSpeed	0x04 // 5
+#define EPROM_ShowCO2SensorError	0x05 // 1
+#define EPROM_FanSpeedDelta			0x06 // 5, Delta for setting lower speed
+#define EPROM_RF_Channel			0x07 // 120
+#define EPROM_FanSpeedThreshold		0x10 // byte array (CO2 ppm divided by 16): 0x1F, 0x22, 0x25, 0x32, 0x38, 0x44
+#define FanSpeedMax			6	 // Length EPROM_FanSpeedThreshold	in bytes = Max speed
+// Fan speed: CO2 < 500 ppm = 0; < 550 ppm = 1; < 600 ppm = 2; < 800 ppm = 3; < 900 ppm = 4; < 1100 ppm = 5; > = 6 (max)
+#define EPROM_RFAddresses			0x20 // LSB for every fan: 0xC1, 0xC2, 0xC3, 0xC4
+#define EPROM_IRCommandHead			0x30 // length of head pulse
+#define EPROM_IRCommandArray		0x31 // array of commands
+#define EPROM_IRCommandArrayEnd		EPROM_IRCommandArray + IRCommands * sizeof(IRHash)
+#define EPROM_FanSpeedChangeArray	0x40 // Speed skip array: <fan num 0>,<RF channel (0xFF current)>,<numbers of speed values>,<speed for change>,<new speed>, <fan num 1>,..., <0xFF> for end of array
+#define EPROM_Length				0xFF
+

@@ -1,0 +1,16 @@
+eeprom 0x0000  52 cf 03 80 05 01 05 02 01 ff ff ff ff ff ff ff  RÏ.€.....ÿÿÿÿÿÿÿ
+eeprom 0x0010  1f 22 25 32 38 44 ff ff ff ff ff ff ff ff ff ff  ."%28Dÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x0020  c1 c2 c3 c4 c5 c6 c7 c8 c9 ff ff ff ff ff ff ff  ÁÂÃÄÅÆÇÈÉÿÿÿÿÿÿÿ
+eeprom 0x0030  17 d8 7d f8 52 d8 d5 d4 60 ff ff ff ff ff ff ff  .Ø}øRØÕÔ`ÿÿÿÿÿÿÿ
+eeprom 0x0040  00 ff 01 03 04 02 78 00 ff ff ff ff ff ff ff ff  .ÿ....x.ÿÿÿÿÿÿÿÿ
+eeprom 0x0050  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x0060  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x0070  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x0080  00 fe 01 00 00 00 00 00 00 00 00 00 00 00 00 00  .þ..............
+eeprom 0x0090  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x00A0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x00B0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x00C0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x00D0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x00E0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+eeprom 0x00F0  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff

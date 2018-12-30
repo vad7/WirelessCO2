@@ -1,0 +1,601 @@
+Archive member included because of file (symbol)
+
+d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+                              d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o (exit)
+d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+                              WirelessCO2Sensor.o (__do_copy_data)
+d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+                              WirelessCO2Sensor.o (__do_clear_bss)
+d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libc.a(memcpy_P.o)
+                              WirelessCO2Sensor.o (memcpy_P)
+
+Allocating common symbols
+Common symbol       size              file
+
+LowLightThreshold   0x1               WirelessCO2Sensor.o
+IRHead              0x1               WirelessCO2Sensor.o
+IRArrayBit          0x1               WirelessCO2Sensor.o
+IRHash              0x2               WirelessCO2Sensor.o
+SetupItem           0x1               WirelessCO2Sensor.o
+FanSpeedOverrideArray
+                    0xa               WirelessCO2Sensor.o
+IRReadedByte        0x1               WirelessCO2Sensor.o
+SetupType           0x1               WirelessCO2Sensor.o
+IRKey               0x1               WirelessCO2Sensor.o
+NRF24_Buffer        0x4               WirelessCO2Sensor.o
+IRSignalTimerLast   0x1               WirelessCO2Sensor.o
+FanSpeedForce       0xa               WirelessCO2Sensor.o
+CO2LevelAverageArray
+                    0x8               WirelessCO2Sensor.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o
+ .bss           0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o
+ .text          0x00000000        0x0 WirelessCO2Sensor.o
+ .data          0x00000000        0x0 WirelessCO2Sensor.o
+ .bss           0x00000000        0x0 WirelessCO2Sensor.o
+ .text.Delay1ms
+                0x00000000       0x16 WirelessCO2Sensor.o
+ .text.FlashNumber
+                0x00000000       0x26 WirelessCO2Sensor.o
+ .text.EEPROM_compare_array
+                0x00000000       0x46 WirelessCO2Sensor.o
+ .text.NRF24_ReadRegister
+                0x00000000        0xe WirelessCO2Sensor.o
+ .text.NRF24_Receive
+                0x00000000       0x34 WirelessCO2Sensor.o
+ .text          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libc.a(memcpy_P.o)
+ .data          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libc.a(memcpy_P.o)
+ .bss           0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libc.a(memcpy_P.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o
+LOAD WirelessCO2Sensor.o
+START GROUP
+LOAD d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libm.a
+END GROUP
+START GROUP
+LOAD d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a
+LOAD d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libm.a
+LOAD d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libc.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xdfe
+ *(.vectors)
+ .vectors       0x00000000       0x22 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000022                . = ALIGN (0x2)
+                0x00000022                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000022        0x0 linker stubs
+ *(.trampolines*)
+                0x00000022                __trampolines_end = .
+ *(.progmem*)
+ .progmem.data.NRF24_BASE_ADDR
+                0x00000022        0x2 WirelessCO2Sensor.o
+                0x00000022                NRF24_BASE_ADDR
+ .progmem.data.NRF24_INIT_DATA
+                0x00000024        0xc WirelessCO2Sensor.o
+                0x00000024                NRF24_INIT_DATA
+                0x00000030                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000030                __ctors_start = .
+ *(.ctors)
+                0x00000030                __ctors_end = .
+                0x00000030                __dtors_start = .
+ *(.dtors)
+                0x00000030                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000030        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o
+                0x00000030                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000030        0xc d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000003c       0x16 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_copy_data.o)
+                0x0000003c                __do_copy_data
+ .init4         0x00000052       0x10 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_clear_bss.o)
+                0x00000052                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000062        0x4 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o
+ *(.init9)
+ *(.text)
+ .text          0x00000066        0x2 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o
+                0x00000066                __vector_1
+                0x00000066                __vector_12
+                0x00000066                __bad_interrupt
+                0x00000066                __vector_6
+                0x00000066                __vector_7
+                0x00000066                __vector_5
+                0x00000066                __vector_9
+                0x00000066                __vector_15
+                0x00000066                __vector_14
+                0x00000066                __vector_10
+                0x00000066                __vector_16
+                0x00000068                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Delay10us
+                0x00000068       0x12 WirelessCO2Sensor.o
+                0x00000068                Delay10us
+ .text.Delay100ms
+                0x0000007a       0x1c WirelessCO2Sensor.o
+                0x0000007a                Delay100ms
+ .text.FlashLED
+                0x00000096       0x34 WirelessCO2Sensor.o
+                0x00000096                FlashLED
+ .text.EEPROM_read
+                0x000000ca       0x10 WirelessCO2Sensor.o
+                0x000000ca                EEPROM_read
+ .text.EEPROM_write
+                0x000000da       0x18 WirelessCO2Sensor.o
+                0x000000da                EEPROM_write
+ .text.SPI_WriteReadByte
+                0x000000f2       0x12 WirelessCO2Sensor.o
+                0x000000f2                SPI_WriteReadByte
+ .text.NRF24_ReadArray
+                0x00000104       0x46 WirelessCO2Sensor.o
+                0x00000104                NRF24_ReadArray
+ .text.NRF24_WriteByte
+                0x0000014a       0x20 WirelessCO2Sensor.o
+                0x0000014a                NRF24_WriteByte
+ .text.NRF24_WriteArray
+                0x0000016a       0x44 WirelessCO2Sensor.o
+                0x0000016a                NRF24_WriteArray
+ .text.NRF24_SendCommand
+                0x000001ae        0x8 WirelessCO2Sensor.o
+                0x000001ae                NRF24_SendCommand
+ .text.NRF24_SetMode
+                0x000001b6       0x1c WirelessCO2Sensor.o
+                0x000001b6                NRF24_SetMode
+ .text.NRF24_Transmit
+                0x000001d2       0x44 WirelessCO2Sensor.o
+                0x000001d2                NRF24_Transmit
+ .text.NRF24_SetAddresses
+                0x00000216       0x42 WirelessCO2Sensor.o
+                0x00000216                NRF24_SetAddresses
+ .text.NRF24_Powerdown
+                0x00000258        0x8 WirelessCO2Sensor.o
+                0x00000258                NRF24_Powerdown
+ .text.NRF24_init
+                0x00000260       0x2e WirelessCO2Sensor.o
+                0x00000260                NRF24_init
+ .text.__vector_4
+                0x0000028e       0xe2 WirelessCO2Sensor.o
+                0x0000028e                __vector_4
+ .text.__vector_13
+                0x00000370       0x32 WirelessCO2Sensor.o
+                0x00000370                __vector_13
+ .text.__vector_2
+                0x000003a2       0x54 WirelessCO2Sensor.o
+                0x000003a2                __vector_2
+ .text.__vector_8
+                0x000003f6       0x34 WirelessCO2Sensor.o
+                0x000003f6                __vector_8
+ .text.__vector_11
+                0x0000042a       0xa2 WirelessCO2Sensor.o
+                0x0000042a                __vector_11
+ .text.__vector_3
+                0x000004cc      0x100 WirelessCO2Sensor.o
+                0x000004cc                __vector_3
+ .text.Set_LED_Warning
+                0x000005cc       0x1c WirelessCO2Sensor.o
+                0x000005cc                Set_LED_Warning
+ .text.ShowFanSpeedOverride
+                0x000005e8       0x24 WirelessCO2Sensor.o
+                0x000005e8                ShowFanSpeedOverride
+ .text.startup.main
+                0x0000060c      0x7dc WirelessCO2Sensor.o
+                0x0000060c                main
+ .text.avr-libc
+                0x00000de8       0x12 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libc.a(memcpy_P.o)
+                0x00000de8                memcpy_P
+                0x00000dfa                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000dfa        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+                0x00000dfa                _exit
+                0x00000dfa                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000dfa        0x4 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000dfe                _etext = .
+
+.data           0x00800060        0x2 load address 0x00000dfe
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.CO2LevelAverageCnt
+                0x00800060        0x1 WirelessCO2Sensor.o
+                0x00800060                CO2LevelAverageCnt
+ .data.Timer    0x00800061        0x1 WirelessCO2Sensor.o
+                0x00800061                Timer
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800062                . = ALIGN (0x2)
+                0x00800062                _edata = .
+                0x00800062                PROVIDE (__data_end, .)
+
+.bss            0x00800062       0x3d
+                0x00800062                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.fanspeed_prev.2163
+                0x00800062        0x1 WirelessCO2Sensor.o
+ .bss.LED_Warning_NoRepeat
+                0x00800063        0x1 WirelessCO2Sensor.o
+                0x00800063                LED_Warning_NoRepeat
+ .bss.LED_Warning_WorkShort
+                0x00800064        0x1 WirelessCO2Sensor.o
+                0x00800064                LED_Warning_WorkShort
+ .bss.LED_Warning_WorkLong
+                0x00800065        0x1 WirelessCO2Sensor.o
+                0x00800065                LED_Warning_WorkLong
+ .bss.LED_WarningOffCnt
+                0x00800066        0x1 WirelessCO2Sensor.o
+                0x00800066                LED_WarningOffCnt
+ .bss.LED_WarningOnCnt
+                0x00800067        0x1 WirelessCO2Sensor.o
+                0x00800067                LED_WarningOnCnt
+ .bss.data      0x00800068        0x1 WirelessCO2Sensor.o
+                0x00800068                data
+ .bss.datapos   0x00800069        0x1 WirelessCO2Sensor.o
+                0x00800069                datapos
+ .bss.Setup     0x0080006a        0x1 WirelessCO2Sensor.o
+                0x0080006a                Setup
+ .bss.SetupIR   0x0080006b        0x1 WirelessCO2Sensor.o
+                0x0080006b                SetupIR
+ .bss.Key1Pressed
+                0x0080006c        0x1 WirelessCO2Sensor.o
+                0x0080006c                Key1Pressed
+ .bss.IRReceived
+                0x0080006d        0x1 WirelessCO2Sensor.o
+                0x0080006d                IRReceived
+ .bss.IRSignalTimer
+                0x0080006e        0x1 WirelessCO2Sensor.o
+                0x0080006e                IRSignalTimer
+ .bss.KeyOkTimeout
+                0x0080006f        0x1 WirelessCO2Sensor.o
+                0x0080006f                KeyOkTimeout
+ .bss.FanSpeedOverride
+                0x00800070        0x1 WirelessCO2Sensor.o
+                0x00800070                FanSpeedOverride
+ .bss.CO2Level  0x00800071        0x2 WirelessCO2Sensor.o
+                0x00800071                CO2Level
+ .bss.LowLight  0x00800073        0x1 WirelessCO2Sensor.o
+                0x00800073                LowLight
+ .bss.LED_Warning
+                0x00800074        0x1 WirelessCO2Sensor.o
+                0x00800074                LED_Warning
+ *(COMMON)
+ COMMON         0x00800075       0x2a WirelessCO2Sensor.o
+                0x00800075                LowLightThreshold
+                0x00800076                IRHead
+                0x00800077                IRArrayBit
+                0x00800078                IRHash
+                0x0080007a                SetupItem
+                0x0080007b                FanSpeedOverrideArray
+                0x00800085                IRReadedByte
+                0x00800086                SetupType
+                0x00800087                IRKey
+                0x00800088                NRF24_Buffer
+                0x0080008c                IRSignalTimerLast
+                0x0080008d                FanSpeedForce
+                0x00800097                CO2LevelAverageArray
+                0x0080009f                PROVIDE (__bss_end, .)
+                0x00000dfe                __data_load_start = LOADADDR (.data)
+                0x00000e00                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080009f        0x0
+                0x0080009f                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080009f                PROVIDE (__noinit_end, .)
+                0x0080009f                _end = .
+                0x0080009f                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 WirelessCO2Sensor.o
+                                 0x31 (size before relaxing)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x100
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000      0x100 WirelessCO2Sensor.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x159e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x159e WirelessCO2Sensor.o
+
+.debug_abbrev   0x00000000      0x3b1
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x3b1 WirelessCO2Sensor.o
+
+.debug_line     0x00000000      0x7b1
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x7b1 WirelessCO2Sensor.o
+
+.debug_frame    0x00000000      0x368
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x368 WirelessCO2Sensor.o
+
+.debug_str      0x00000000      0x5f6
+ *(.debug_str)
+ .debug_str     0x00000000      0x5f6 WirelessCO2Sensor.o
+                                0x67b (size before relaxing)
+
+.debug_loc      0x00000000     0x10dc
+ *(.debug_loc)
+ .debug_loc     0x00000000     0x10dc WirelessCO2Sensor.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x188
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x188 WirelessCO2Sensor.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(WirelessCO2Sensor.elf elf32-avr)
+LOAD linker stubs

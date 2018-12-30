@@ -1,0 +1,10 @@
+eeprom 0x0000  52 fc 01 92 05 01 05 02 01 ff ff ff ff ff ff ff  
+eeprom 0x0010  1f 22 25 32 38 44 ff ff ff ff ff ff ff ff ff ff  
+eeprom 0x0020  c0 c2 c3 c4 c5 c6 c7 c8 c9 ff ff ff ff ff ff ff  
+eeprom 0x0030  17 d8 7d f8 52 d8 d5 d4 60 ff ff ff ff ff ff ff  
+eeprom 0x0040  00 ff 01 03 03 02 78 00 ff ff ff ff ff ff ff ff  
+eeprom 0x0050  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  
+eeprom 0x0060  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  
+eeprom 0x0070  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff  
+eeprom 0x0080  00 fe 01 00 00 00 00 00 00 00 00 00 00 00 00 00  
+
