@@ -29,6 +29,13 @@
 
 #define CO2SensorState				(PINA & (1<<PORTA0))
 
+//#define LDR_ENABLED
+
+#define RF_ON1						DDRA &= ~(1<<PORTA7); PORTA |= (1<<PORTA7)
+#define RF_ON2						DDRA |= (1<<PORTA7)
+#define RF_OFF1						DDRA &= ~(1<<PORTA7); PORTA &= ~(1<<PORTA7)
+#define RF_OFF2						DDRA |= (1<<PORTA7); 
+
 #define ERR_RF_Send					0x10 // Send failure, after short bursts = fan offset (mask 0x0F)
 #define ERR_RF_SetAddr				0x20 //	Set addresses failure,
 #define ERR_RF_NotResp				0x30 //	RF module not response,
@@ -65,6 +72,7 @@ uint8_t Setup						= 0; // 1 - select setup menu, 2 - set parameter, 3 - fans ov
 uint8_t SetupItem;						 // setup menu item: 1 - Exit, 2 - Set Low light threshold, 3 - Edit EEPROM, 4 - Set OSCCAL (out: OCR0B), 5 - Fans override - select fan, 6 - fan override
 uint8_t SetupType;
 uint8_t datapos = 0, data = 0;
+uint8_t rf_last_addr = 0;
 
 #define EPROM_OSCCAL				0x00
 #define EPROM_LowLightThreshold		0x01 // 0x98, Light ON threshold
@@ -291,13 +299,28 @@ void ShowFanSpeedOverride(int8_t speed)
 	}
 }
 
+void rf_reset_chip(void)
+{
+	RF_OFF1;
+	Delay100ms(20);
+	RF_OFF2;
+	Delay100ms(10);
+	RF_ON1;
+	Delay100ms(2);
+	RF_ON2;
+	Delay100ms(2);
+	NRF24_init(EEPROM_read(EPROM_RF_Channel));
+	NRF24_SetMode(NRF24_TransmitMode);
+	Delay100ms(1);
+	rf_last_addr = 0;
+}
+
 int main(void)
 {
 	CLKPR = (1<<CLKPCE); CLKPR = (0<<CLKPS3) | (0<<CLKPS2) | (0<<CLKPS1) | (0<<CLKPS0); // Clock prescaler division factor: 1
 	MCUCR = (1<<SE) | (0<<SM1) | (0<<SM0); // Idle sleep enable
 	DDRA = LED1; // Out
 	NRF24_DDR |= NRF24_CE | NRF24_CSN | NRF24_SCK | NRF24_MOSI; // Out
-	PORTA = (1<<PORTA7); // pull up: Photo resistor LDR1
 	PORTB = (1<<PORTB0) | (1<<PORTB1); // Pullup not used
 	// Timer 8 bit		NRF24L01_Buffer	Unknown identifier	Error
 	TCCR0A = (1<<WGM01) | (1<<WGM00);  // Timer0: Fast PWM OCRA
@@ -312,9 +335,12 @@ int main(void)
 		TIMSK1 = (1<<TOIE1); // Timer/Counter1, Overflow Interrupt Enable
 	}
 	// ADC
+#ifdef LDR_ENABLED
+	PORTA = (1<<PORTA7); // pull up: Photo resistor LDR1
  	ADMUX = (0<<REFS1) | (1<<MUX2)|(1<<MUX1)|(1<<MUX0); // ADC7 (PA7)
  	ADCSRA = (1<<ADEN) | (0<<ADATE) | (1<<ADIE) | (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0); // ADC enable, Free Running mode, Interrupt, ADC 128 divider
  	ADCSRB = (1<<ADLAR) | (0<<ADTS2) | (0<<ADTS1) | (0<<ADTS0); // ADC Left Adjust Result
+#endif
 	// Pin change
  	GIMSK = (1<<PCIE0) | (1<<PCIE1); // Pin Change Interrupt Enable 0, 1
  	PCMSK0 = (1<<PCINT0); // Pin Change Mask Register 0 - Sensor
@@ -331,18 +357,15 @@ int main(void)
 	PCMSK1 |= (1<<PCINT10); // Pin Change Mask Register 0 - Keys
 	TIMSK0 |= (1<<TOIE0); // Timer/Counter0 Overflow Interrupt Enable
 	IRHead = EEPROM_read(EPROM_IRCommandHead);
-	NRF24_init(EEPROM_read(EPROM_RF_Channel)); // After init transmit must be delayed
+	RF_ON1;
 	FlashLED(3,3,3);
+	RF_ON2;
+	Delay100ms(1);
 	SETUP_WATCHDOG;
 	sei();
+	NRF24_init(EEPROM_read(EPROM_RF_Channel)); // After init transmit must be delayed
 	for(uint8_t i = 0; i < MAX_FANS; i++) FanSpeedForce[i] = -1; // set auto
 	NRF24_SetMode(NRF24_TransmitMode);
-	if(EEPROM_read(EPROM_NumberFans) == 1) {
-		if(!NRF24_SetAddresses(EEPROM_read(EPROM_RFAddresses + 0))) {
-			Delay100ms(10);
-			Set_LED_Warning(ERR_RF_SetAddr);
-		}
-	}
 	while(1)
 	{
 		__asm__ volatile ("" ::: "memory"); // Need memory barrier
@@ -621,15 +644,16 @@ xSendNow:
 			if(fanspeed < 0) fanspeed = 0;
 			if(LowLight && fanspeed > (int8_t)(i = EEPROM_read(EPROM_LowLightMaxFanSpeed))) fanspeed = i;
 			//NRF24_SetMode(NRF24_TransmitMode);
-			uint8_t maxfans = EEPROM_read(EPROM_NumberFans);
-			for(uint8_t fan = 0; fan < maxfans; fan++)
+			for(uint8_t fan = 0; fan < EEPROM_read(EPROM_NumberFans); fan++)
 			{
-				if(maxfans > 1) {
-					if(!NRF24_SetAddresses(EEPROM_read(EPROM_RFAddresses + fan)))
-					{
+				uint8_t addr = EEPROM_read(EPROM_RFAddresses + fan);
+				if(rf_last_addr != addr) {
+					if(!NRF24_SetAddresses(addr)) {
 						Set_LED_Warning(ERR_RF_SetAddr);
+						rf_reset_chip();
 						break;
 					}
+					rf_last_addr = addr;
 				}
 				int8_t fspeed = fanspeed + FanSpeedOverrideArray[fan];
 				if(fspeed > FanSpeedMax) fspeed = FanSpeedMax;
@@ -662,11 +686,8 @@ xSkipArrayEnd:
 				uint8_t err2 = err == 2 ? ERR_RF_NotResp : (ERR_RF_Send + fan + 1);
 				if(err)	{
 					Set_LED_Warning(err2);
-					NRF24_SendCommand(NRF24_CMD_FLUSH_RX);
-					NRF24_SendCommand(NRF24_CMD_FLUSH_TX);
-					NRF24_Powerdown();
-					Delay100ms(20); // 2 sec
-					NRF24_SetMode(NRF24_TransmitMode);
+					rf_reset_chip();
+					break;
 				}
 			}
 			//NRF24_Powerdown();
