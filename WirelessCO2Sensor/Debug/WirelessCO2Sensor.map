@@ -45,6 +45,8 @@ Discarded input sections
                 0x00000000        0xe WirelessCO2Sensor.o
  .text.NRF24_Receive
                 0x00000000       0x34 WirelessCO2Sensor.o
+ .text.NRF24_Powerdown
+                0x00000000        0x8 WirelessCO2Sensor.o
  .text          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
  .data          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
@@ -212,7 +214,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xdfe
+.text           0x00000000      0xdf8
  *(.vectors)
  .vectors       0x00000000       0x22 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25/crttn44a.o
                 0x00000000                __vector_default
@@ -327,47 +329,47 @@ END GROUP
  .text.NRF24_SetAddresses
                 0x00000216       0x42 WirelessCO2Sensor.o
                 0x00000216                NRF24_SetAddresses
- .text.NRF24_Powerdown
-                0x00000258        0x8 WirelessCO2Sensor.o
-                0x00000258                NRF24_Powerdown
  .text.NRF24_init
-                0x00000260       0x2e WirelessCO2Sensor.o
-                0x00000260                NRF24_init
+                0x00000258       0x2e WirelessCO2Sensor.o
+                0x00000258                NRF24_init
  .text.__vector_4
-                0x0000028e       0xe2 WirelessCO2Sensor.o
-                0x0000028e                __vector_4
+                0x00000286       0xe2 WirelessCO2Sensor.o
+                0x00000286                __vector_4
  .text.__vector_13
-                0x00000370       0x32 WirelessCO2Sensor.o
-                0x00000370                __vector_13
+                0x00000368       0x32 WirelessCO2Sensor.o
+                0x00000368                __vector_13
  .text.__vector_2
-                0x000003a2       0x54 WirelessCO2Sensor.o
-                0x000003a2                __vector_2
+                0x0000039a       0x54 WirelessCO2Sensor.o
+                0x0000039a                __vector_2
  .text.__vector_8
-                0x000003f6       0x34 WirelessCO2Sensor.o
-                0x000003f6                __vector_8
+                0x000003ee       0x34 WirelessCO2Sensor.o
+                0x000003ee                __vector_8
  .text.__vector_11
-                0x0000042a       0xa2 WirelessCO2Sensor.o
-                0x0000042a                __vector_11
+                0x00000422       0xa2 WirelessCO2Sensor.o
+                0x00000422                __vector_11
  .text.__vector_3
-                0x000004cc      0x100 WirelessCO2Sensor.o
-                0x000004cc                __vector_3
+                0x000004c4      0x100 WirelessCO2Sensor.o
+                0x000004c4                __vector_3
  .text.Set_LED_Warning
-                0x000005cc       0x1c WirelessCO2Sensor.o
-                0x000005cc                Set_LED_Warning
+                0x000005c4       0x1c WirelessCO2Sensor.o
+                0x000005c4                Set_LED_Warning
  .text.ShowFanSpeedOverride
-                0x000005e8       0x24 WirelessCO2Sensor.o
-                0x000005e8                ShowFanSpeedOverride
+                0x000005e0       0x24 WirelessCO2Sensor.o
+                0x000005e0                ShowFanSpeedOverride
+ .text.rf_reset_chip
+                0x00000604       0x3a WirelessCO2Sensor.o
+                0x00000604                rf_reset_chip
  .text.startup.main
-                0x0000060c      0x7dc WirelessCO2Sensor.o
-                0x0000060c                main
+                0x0000063e      0x7a4 WirelessCO2Sensor.o
+                0x0000063e                main
  .text.avr-libc
-                0x00000de8       0x12 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libc.a(memcpy_P.o)
-                0x00000de8                memcpy_P
-                0x00000dfa                . = ALIGN (0x2)
+                0x00000de2       0x12 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr25\libc.a(memcpy_P.o)
+                0x00000de2                memcpy_P
+                0x00000df4                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000dfa        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
-                0x00000dfa                _exit
-                0x00000dfa                exit
+ .fini9         0x00000df4        0x0 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+                0x00000df4                _exit
+                0x00000df4                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -386,11 +388,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000dfa        0x4 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
+ .fini0         0x00000df4        0x4 d:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr25\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000dfe                _etext = .
+                0x00000df8                _etext = .
 
-.data           0x00800060        0x2 load address 0x00000dfe
+.data           0x00800060        0x2 load address 0x00000df8
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -406,11 +408,11 @@ END GROUP
                 0x00800062                _edata = .
                 0x00800062                PROVIDE (__data_end, .)
 
-.bss            0x00800062       0x3d
+.bss            0x00800062       0x3e
                 0x00800062                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.fanspeed_prev.2163
+ .bss.fanspeed_prev.2167
                 0x00800062        0x1 WirelessCO2Sensor.o
  .bss.LED_Warning_NoRepeat
                 0x00800063        0x1 WirelessCO2Sensor.o
@@ -427,61 +429,64 @@ END GROUP
  .bss.LED_WarningOnCnt
                 0x00800067        0x1 WirelessCO2Sensor.o
                 0x00800067                LED_WarningOnCnt
- .bss.data      0x00800068        0x1 WirelessCO2Sensor.o
-                0x00800068                data
- .bss.datapos   0x00800069        0x1 WirelessCO2Sensor.o
-                0x00800069                datapos
- .bss.Setup     0x0080006a        0x1 WirelessCO2Sensor.o
-                0x0080006a                Setup
- .bss.SetupIR   0x0080006b        0x1 WirelessCO2Sensor.o
-                0x0080006b                SetupIR
+ .bss.rf_last_addr
+                0x00800068        0x1 WirelessCO2Sensor.o
+                0x00800068                rf_last_addr
+ .bss.data      0x00800069        0x1 WirelessCO2Sensor.o
+                0x00800069                data
+ .bss.datapos   0x0080006a        0x1 WirelessCO2Sensor.o
+                0x0080006a                datapos
+ .bss.Setup     0x0080006b        0x1 WirelessCO2Sensor.o
+                0x0080006b                Setup
+ .bss.SetupIR   0x0080006c        0x1 WirelessCO2Sensor.o
+                0x0080006c                SetupIR
  .bss.Key1Pressed
-                0x0080006c        0x1 WirelessCO2Sensor.o
-                0x0080006c                Key1Pressed
- .bss.IRReceived
                 0x0080006d        0x1 WirelessCO2Sensor.o
-                0x0080006d                IRReceived
- .bss.IRSignalTimer
+                0x0080006d                Key1Pressed
+ .bss.IRReceived
                 0x0080006e        0x1 WirelessCO2Sensor.o
-                0x0080006e                IRSignalTimer
- .bss.KeyOkTimeout
+                0x0080006e                IRReceived
+ .bss.IRSignalTimer
                 0x0080006f        0x1 WirelessCO2Sensor.o
-                0x0080006f                KeyOkTimeout
- .bss.FanSpeedOverride
+                0x0080006f                IRSignalTimer
+ .bss.KeyOkTimeout
                 0x00800070        0x1 WirelessCO2Sensor.o
-                0x00800070                FanSpeedOverride
- .bss.CO2Level  0x00800071        0x2 WirelessCO2Sensor.o
-                0x00800071                CO2Level
- .bss.LowLight  0x00800073        0x1 WirelessCO2Sensor.o
-                0x00800073                LowLight
+                0x00800070                KeyOkTimeout
+ .bss.FanSpeedOverride
+                0x00800071        0x1 WirelessCO2Sensor.o
+                0x00800071                FanSpeedOverride
+ .bss.CO2Level  0x00800072        0x2 WirelessCO2Sensor.o
+                0x00800072                CO2Level
+ .bss.LowLight  0x00800074        0x1 WirelessCO2Sensor.o
+                0x00800074                LowLight
  .bss.LED_Warning
-                0x00800074        0x1 WirelessCO2Sensor.o
-                0x00800074                LED_Warning
+                0x00800075        0x1 WirelessCO2Sensor.o
+                0x00800075                LED_Warning
  *(COMMON)
- COMMON         0x00800075       0x2a WirelessCO2Sensor.o
-                0x00800075                LowLightThreshold
-                0x00800076                IRHead
-                0x00800077                IRArrayBit
-                0x00800078                IRHash
-                0x0080007a                SetupItem
-                0x0080007b                FanSpeedOverrideArray
-                0x00800085                IRReadedByte
-                0x00800086                SetupType
-                0x00800087                IRKey
-                0x00800088                NRF24_Buffer
-                0x0080008c                IRSignalTimerLast
-                0x0080008d                FanSpeedForce
-                0x00800097                CO2LevelAverageArray
-                0x0080009f                PROVIDE (__bss_end, .)
-                0x00000dfe                __data_load_start = LOADADDR (.data)
-                0x00000e00                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800076       0x2a WirelessCO2Sensor.o
+                0x00800076                LowLightThreshold
+                0x00800077                IRHead
+                0x00800078                IRArrayBit
+                0x00800079                IRHash
+                0x0080007b                SetupItem
+                0x0080007c                FanSpeedOverrideArray
+                0x00800086                IRReadedByte
+                0x00800087                SetupType
+                0x00800088                IRKey
+                0x00800089                NRF24_Buffer
+                0x0080008d                IRSignalTimerLast
+                0x0080008e                FanSpeedForce
+                0x00800098                CO2LevelAverageArray
+                0x008000a0                PROVIDE (__bss_end, .)
+                0x00000df8                __data_load_start = LOADADDR (.data)
+                0x00000dfa                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080009f        0x0
-                0x0080009f                PROVIDE (__noinit_start, .)
+.noinit         0x008000a0        0x0
+                0x008000a0                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x0080009f                PROVIDE (__noinit_end, .)
-                0x0080009f                _end = .
-                0x0080009f                PROVIDE (__heap_start, .)
+                0x008000a0                PROVIDE (__noinit_end, .)
+                0x008000a0                _end = .
+                0x008000a0                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -540,38 +545,38 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x100
+.debug_aranges  0x00000000      0x108
  *(.debug_aranges)
  .debug_aranges
-                0x00000000      0x100 WirelessCO2Sensor.o
+                0x00000000      0x108 WirelessCO2Sensor.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x159e
+.debug_info     0x00000000     0x15d4
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x159e WirelessCO2Sensor.o
+ .debug_info    0x00000000     0x15d4 WirelessCO2Sensor.o
 
-.debug_abbrev   0x00000000      0x3b1
+.debug_abbrev   0x00000000      0x3aa
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x3b1 WirelessCO2Sensor.o
+ .debug_abbrev  0x00000000      0x3aa WirelessCO2Sensor.o
 
-.debug_line     0x00000000      0x7b1
+.debug_line     0x00000000      0x7ba
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x7b1 WirelessCO2Sensor.o
+ .debug_line    0x00000000      0x7ba WirelessCO2Sensor.o
 
-.debug_frame    0x00000000      0x368
+.debug_frame    0x00000000      0x378
  *(.debug_frame)
- .debug_frame   0x00000000      0x368 WirelessCO2Sensor.o
+ .debug_frame   0x00000000      0x378 WirelessCO2Sensor.o
 
-.debug_str      0x00000000      0x5f6
+.debug_str      0x00000000      0x609
  *(.debug_str)
- .debug_str     0x00000000      0x5f6 WirelessCO2Sensor.o
-                                0x67b (size before relaxing)
+ .debug_str     0x00000000      0x609 WirelessCO2Sensor.o
+                                0x693 (size before relaxing)
 
-.debug_loc      0x00000000     0x10dc
+.debug_loc      0x00000000     0x1109
  *(.debug_loc)
- .debug_loc     0x00000000     0x10dc WirelessCO2Sensor.o
+ .debug_loc     0x00000000     0x1109 WirelessCO2Sensor.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -591,9 +596,9 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x188
+.debug_ranges   0x00000000      0x178
  *(.debug_ranges)
- .debug_ranges  0x00000000      0x188 WirelessCO2Sensor.o
+ .debug_ranges  0x00000000      0x178 WirelessCO2Sensor.o
 
 .debug_macro
  *(.debug_macro)
